@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+
+        "typeRoots": [
+            //to include node suggestions
+            "./node_modules/@types",
+            //to make types under env.d.ts file avaliable for selection during complie time
+            "types"
+        ]
+
+    }
+}
