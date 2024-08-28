@@ -37,8 +37,6 @@ When('Click {string} on the appointment popup', async function (string) {
 });
 
 Then('user is shown with {string} message on screen', async function (notificationMessage) {
-    
-    //
     let userNotificaitonMsg = await pageFixture.page.locator("//span['" + notificationMessage + "']");
     await expect(userNotificaitonMsg).toBeVisible();
 });
